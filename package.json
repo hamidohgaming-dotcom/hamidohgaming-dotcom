@@ -1,0 +1,21 @@
+{
+  "name": "hamidoh-gaming-hub",
+  "version": "1.0.0",
+  "description": "High-tech gaming hub, portfolio, and profile showcase for hamidohgaming-dotcom",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "gaming",
+    "streamer",
+    "cyberpunk",
+    "portfolio",
+    "github-profile",
+    "canvas-game",
+    "hamidoh-gaming"
+  ],
+  "author": "hamidohgaming-dotcom",
+  "license": "MIT"
+}

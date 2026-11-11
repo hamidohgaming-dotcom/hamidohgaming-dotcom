@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyberpunk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamidoh Gaming | Official Hub & Brand Showcase</title>
+  <meta name="description" content="Welcome to Hamidoh Gaming - Streamer, Competitive FPS Specialist, and Tech Enthusiast. Check out rig specs, live streams, game clips, and playable arcade mini-games." />
+  
+  <!-- Google Fonts: Orbitron & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient Cyber Background Grid -->
+  <div class="cyber-grid"></div>
+  <div class="scanlines"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-gamepad"></i></span>
+        <span class="logo-text">HAMIDOH<span class="accent-text">GAMING</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#battlestation" class="nav-item">Battlestation</a>
+        <a href="#vault" class="nav-item">Game Vault</a>
+        <a href="#arcade" class="nav-item highlight-link">Neon Arcade</a>
+        <a href="#schedule" class="nav-item">Schedule</a>
+        <a href="#community" class="nav-item">Community</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Audio Effects Toggle -->
+        <button id="sfxToggle" class="icon-btn" title="Toggle Sound FX" aria-label="Toggle Sound FX">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+
+        <!-- RGB Theme Switcher -->
+        <div class="theme-picker">
+          <button id="themeMenuBtn" class="icon-btn" title="Theme Selector" aria-label="Theme Selector">
+            <i class="fa-solid fa-palette"></i>
+          </button>
+          <div class="theme-dropdown" id="themeDropdown">
+            <button class="theme-option active" data-set-theme="cyberpunk">
+              <span class="theme-swatch cyan-pink"></span> Cyberpunk Neon
+            </button>
+            <button class="theme-option" data-set-theme="vaporwave">
+              <span class="theme-swatch violet-pink"></span> Vaporwave
+            </button>
+            <button class="theme-option" data-set-theme="matrix">
+              <span class="theme-swatch emerald-green"></span> Matrix Emerald
+            </button>
+            <button class="theme-option" data-set-theme="solar">
+              <span class="theme-swatch orange-amber"></span> Solar Flare
+            </button>
+          </div>
+        </div>
+
+        <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer" class="btn-live">
+          <span class="pulse-dot"></span> LIVE NOW
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileToggle" class="icon-btn mobile-menu-btn" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="about" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="live-indicator"></span>
+            <span id="streamStatusText">SYSTEM ACTIVE • BROADCASTING IN 1440P</span>
+          </div>
+          
+          <h1 class="hero-title">
+            NEXT-GEN GAMING <br>
+            <span class="gradient-text">&amp; ENTERTAINMENT</span>
+          </h1>
+
+          <p class="hero-desc">
+            Competitive FPS grinder, variety streamer, and content creator crafting epic moments, high-level clutches, and top-tier gaming vibes.
+          </p>
+
+          <div class="hero-stats-row">
+            <div class="stat-badge">
+              <span class="stat-val">240Hz</span>
+              <span class="stat-lbl">Refresh Rate</span>
+            </div>
+            <div class="stat-badge">
+              <span class="stat-val">100%</span>
+              <span class="stat-lbl">Achievements</span>
+            </div>
+            <div class="stat-badge">
+              <span class="stat-val">Tier 1</span>
+              <span class="stat-lbl">FPS Specialist</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#arcade" class="btn-primary">
+              <i class="fa-solid fa-play"></i> Play Mini-Arcade
+            </a>
+            <a href="#battlestation" class="btn-secondary">
+              <i class="fa-solid fa-microchip"></i> View Rig Specs
+            </a>
+            <a href="https://github.com/hamidohgaming-dotcom" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+              <i class="fa-brands fa-github"></i> GitHub Profile
+            </a>
+          </div>
+
+          <!-- Social Handles -->
+          <div class="social-bar">
+            <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer" class="social-icon" title="Twitch"><i class="fa-brands fa-twitch"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://discord.gg" target="_blank" rel="noopener noreferrer" class="social-icon" title="Discord"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://steamcommunity.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="Steam"><i class="fa-brands fa-steam"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <div class="avatar-glow"></div>
+            <div class="avatar-frame">
+              <div class="avatar-art">
+                <i class="fa-solid fa-headset avatar-icon"></i>
+                <div class="radar-sweep"></div>
+              </div>
+            </div>
+            <div class="tag-card">
+              <span class="tag-code">ID: HAMIDOH-GAMING</span>
+              <span class="tag-rank">RANK: APEX PREDATOR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Battlestation & Rig Specs Section -->
+    <section id="battlestation" class="section">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fa-solid fa-server"></i> BATTLESTATION SPECS</h2>
+        <p class="section-subtitle">Engineered for ultra-low latency, crystal 1440p streaming, and maxed-out ray tracing.</p>
+      </div>
+
+      <div class="grid-cards">
+        <div class="spec-card">
+          <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3 class="card-title">Processor (CPU)</h3>
+          <p class="card-value">Intel Core i9 / AMD Ryzen 9</p>
+          <span class="card-sub">High Clock Speed &amp; Multithreading</span>
+        </div>
+
+        <div class="spec-card highlight-border">
+          <div class="card-icon"><i class="fa-solid fa-tv"></i></div>
+          <h3 class="card-title">Graphics (GPU)</h3>
+          <p class="card-value">NVIDIA RTX 4080 Super</p>
+          <span class="card-sub">16GB GDDR6X • DLSS 3.5 &amp; Frame Gen</span>
+        </div>
+
+        <div class="spec-card">
+          <div class="card-icon"><i class="fa-solid fa-memory"></i></div>
+          <h3 class="card-title">RAM &amp; Storage</h3>
+          <p class="card-value">32GB DDR5 6000MHz + 2TB NVMe</p>
+          <span class="card-sub">Instant Game Booting &amp; Editing Buffer</span>
+        </div>
+
+        <div class="spec-card">
+          <div class="card-icon"><i class="fa-solid fa-desktop"></i></div>
+          <h3 class="card-title">Display Array</h3>
+          <p class="card-value">27" 240Hz 1440p Fast IPS</p>
+          <span class="card-sub">Secondary 24" 144Hz Vertical Chat Display</span>
+        </div>
+
+        <div class="spec-card">
+          <div class="card-icon"><i class="fa-solid fa-mouse"></i></div>
+          <h3 class="card-title">Peripherals</h3>
+          <p class="card-value">8000Hz Ultra-Light + Custom Mechanical</p>
+          <span class="card-sub">Lubed Linears &amp; Glass Mousepad</span>
+        </div>
+
+        <div class="spec-card">
+          <div class="card-icon"><i class="fa-solid fa-headphones"></i></div>
+          <h3 class="card-title">Audio &amp; Broadcast</h3>
+          <p class="card-value">Studio XLR Condenser + Open-Back Cans</p>
+          <span class="card-sub">Pristine Broadcast Sound &amp; Spatial Imaging</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game Vault / Hall of Fame -->
+    <section id="vault" class="section">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fa-solid fa-trophy"></i> GAME VAULT &amp; HALL OF FAME</h2>
+        <p class="section-subtitle">Titles mastered, records set, and current ongoing grinds.</p>
+      </div>
+
+      <div class="vault-filters">
+        <button class="filter-btn active" data-filter="all">All Games</button>
+        <button class="filter-btn" data-filter="fps">Competitive FPS</button>
+        <button class="filter-btn" data-filter="rpg">RPG / Soulslike</button>
+        <button class="filter-btn" data-filter="action">Action / Adventure</button>
+      </div>
+
+      <div class="games-grid" id="gamesGrid">
+        <!-- Game 1 -->
+        <div class="game-card" data-category="rpg">
+          <div class="game-badge status-beaten">100% COMPLETE</div>
+          <div class="game-cover rpg-bg">
+            <i class="fa-solid fa-shield-halved game-bg-icon"></i>
+            <span class="game-title-overlay">Eldritch Quest</span>
+          </div>
+          <div class="game-info">
+            <h3 class="game-name">Eldritch Quest: Shadow Realm</h3>
+            <p class="game-desc">Full 100% achievement run, solo boss challenges, and cooperative campaign exploration.</p>
+            <div class="game-meta">
+              <span><i class="fa-solid fa-clock"></i> 260+ Hrs</span>
+              <span><i class="fa-solid fa-medal"></i> Mastered</span>
+            </div>
+            <button class="btn-clip" data-title="Epic Boss Clutch" data-desc="Flawless solo run against the shadow ruler.">
+              <i class="fa-solid fa-film"></i> Watch Highlight
+            </button>
+          </div>
+        </div>
+
+        <!-- Game 2 -->
+        <div class="game-card" data-category="fps">
+          <div class="game-badge status-playing">MAIN GRIND</div>
+          <div class="game-cover fps-bg">
+            <i class="fa-solid fa-crosshairs game-bg-icon"></i>
+            <span class="game-title-overlay">Tactical Arena</span>
+          </div>
+          <div class="game-info">
+            <h3 class="game-name">Tactical Strike 5v5</h3>
+            <p class="game-desc">Precision shooter specialist, high-rank competitive lobbies, and clutch round defuses.</p>
+            <div class="game-meta">
+              <span><i class="fa-solid fa-clock"></i> 600+ Hrs</span>
+              <span><i class="fa-solid fa-fire"></i> High ELO</span>
+            </div>
+            <button class="btn-clip" data-title="1v5 Ace Clutch" data-desc="Overtime elimination round victory.">
+              <i class="fa-solid fa-film"></i> Watch Highlight
+            </button>
+          </div>
+        </div>
+
+        <!-- Game 3 -->
+        <div class="game-card" data-category="action">
+          <div class="game-badge status-beaten">FINISHED</div>
+          <div class="game-cover cyber-bg">
+            <i class="fa-solid fa-car-side game-bg-icon"></i>
+            <span class="game-title-overlay">Cyber City 2099</span>
+          </div>
+          <div class="game-info">
+            <h3 class="game-name">Cyber City 2099: Phantom Grid</h3>
+            <p class="game-desc">Full ultra graphic fidelity playthrough with high-agility cyberware builds.</p>
+            <div class="game-meta">
+              <span><i class="fa-solid fa-clock"></i> 140+ Hrs</span>
+              <span><i class="fa-solid fa-star"></i> Max Settings</span>
+            </div>
+            <button class="btn-clip" data-title="Neon Highway Escape" data-desc="High-speed vehicular pursuit through the metropolis.">
+              <i class="fa-solid fa-film"></i> Watch Highlight
+            </button>
+          </div>
+        </div>
+
+        <!-- Game 4 -->
+        <div class="game-card" data-category="fps">
+          <div class="game-badge status-playing">RANKED SQUAD</div>
+          <div class="game-cover apex-bg">
+            <i class="fa-solid fa-person-rifle game-bg-icon"></i>
+            <span class="game-title-overlay">Vortex Royale</span>
+          </div>
+          <div class="game-info">
+            <h3 class="game-name">Vortex Royale</h3>
+            <p class="game-desc">Fast-paced aerial movement, high-intensity firefights, and champion squad finishes.</p>
+            <div class="game-meta">
+              <span><i class="fa-solid fa-clock"></i> 450+ Hrs</span>
+              <span><i class="fa-solid fa-bolt"></i> Apex Tier</span>
+            </div>
+            <button class="btn-clip" data-title="Final Zone Victory" data-desc="Final ring squad wipe and championship victory.">
+              <i class="fa-solid fa-film"></i> Watch Highlight
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Neon Arcade: Interactive Mini-Game -->
+    <section id="arcade" class="section arcade-section">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fa-solid fa-gamepad"></i> NEON ARCADE: CYBER DODGER</h2>
+        <p class="section-subtitle">Playable right now in your browser! Dodge obstacles, collect power orbs, and beat the high score.</p>
+      </div>
+
+      <div class="arcade-container">
+        <div class="arcade-scoreboard">
+          <div class="score-box">
+            <span class="score-label">CURRENT SCORE</span>
+            <span class="score-value" id="currentScore">0000</span>
+          </div>
+          <div class="score-box high-score-box">
+            <span class="score-label">RECORD HIGH</span>
+            <span class="score-value" id="highScore">0000</span>
+          </div>
+        </div>
+
+        <div class="canvas-wrapper">
+          <canvas id="gameCanvas" width="800" height="400"></canvas>
+          <div id="gameOverlay" class="game-overlay">
+            <div class="overlay-modal">
+              <h3 id="overlayTitle">CYBER DODGER</h3>
+              <p id="overlaySubtitle">Use [SPACE] / [UP ARROW] or Click/Tap to Jump &amp; Double-Jump!</p>
+              <button id="startGameBtn" class="btn-primary arcade-start-btn">
+                <i class="fa-solid fa-play"></i> START MISSION
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="arcade-controls-guide">
+          <div class="guide-item"><kbd>SPACE</kbd> / <kbd>↑</kbd> Jump &amp; Double Jump</div>
+          <div class="guide-item"><kbd>CLICK / TAP</kbd> Mobile Jump</div>
+          <div class="guide-item"><i class="fa-solid fa-circle-dot" style="color:var(--neon-accent);"></i> Neon Orbs = +50 Pts</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stream Schedule Section -->
+    <section id="schedule" class="section">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fa-solid fa-calendar-days"></i> BROADCAST SCHEDULE</h2>
+        <p class="section-subtitle">Catch the streams live on Twitch and YouTube. All times shown in UTC.</p>
+      </div>
+
+      <div class="schedule-grid">
+        <div class="schedule-card">
+          <div class="sched-day">MONDAY</div>
+          <div class="sched-time"><i class="fa-regular fa-clock"></i> 18:00 - 22:00 UTC</div>
+          <h4 class="sched-title">Competitive FPS Grind</h4>
+          <p class="sched-desc">Ranked Valorant &amp; CS2 climb with communicative high-tier teammates.</p>
+        </div>
+
+        <div class="schedule-card">
+          <div class="sched-day">WEDNESDAY</div>
+          <div class="sched-time"><i class="fa-regular fa-clock"></i> 18:00 - 22:00 UTC</div>
+          <h4 class="sched-title">Apex Legends Squad Push</h4>
+          <p class="sched-desc">Fast-paced Battle Royale movement and ranked tournament practice.</p>
+        </div>
+
+        <div class="schedule-card active-day">
+          <div class="sched-day">FRIDAY <span class="hot-badge">COMMUNITY NIGHT</span></div>
+          <div class="sched-time"><i class="fa-regular fa-clock"></i> 19:00 - 00:00 UTC</div>
+          <h4 class="sched-title">Viewer Custom Lobbies</h4>
+          <p class="sched-desc">Party games, custom matches with Discord community, and giveaways.</p>
+        </div>
+
+        <div class="schedule-card">
+          <div class="sched-day">SATURDAY</div>
+          <div class="sched-time"><i class="fa-regular fa-clock"></i> 16:00 - 21:00 UTC</div>
+          <h4 class="sched-title">AAA &amp; Story Campaigns</h4>
+          <p class="sched-desc">Soulslike boss runs, immersive RPG walkthroughs in max graphic fidelity.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community & Social Section -->
+    <section id="community" class="section community-section">
+      <div class="community-banner">
+        <div class="community-text">
+          <span class="comm-pill">JOIN THE REVOLUTION</span>
+          <h2>BECOME PART OF THE SQUAD</h2>
+          <p>Join our Discord server to participate in community game nights, clip submissions, setup ratings, and daily tech banter.</p>
+          <div class="comm-actions">
+            <a href="https://discord.gg" target="_blank" rel="noopener noreferrer" class="btn-discord">
+              <i class="fa-brands fa-discord"></i> Join Discord Server
+            </a>
+            <a href="https://github.com/hamidohgaming-dotcom" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <i class="fa-brands fa-github"></i> Star on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="community-badge-box">
+          <div class="badge-item">
+            <i class="fa-solid fa-users"></i>
+            <span>Active Gamers</span>
+          </div>
+          <div class="badge-item">
+            <i class="fa-solid fa-trophy"></i>
+            <span>Monthly Tourneys</span>
+          </div>
+          <div class="badge-item">
+            <i class="fa-solid fa-gift"></i>
+            <span>Game Giveaways</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Video/Clip Highlight Modal -->
+  <div id="clipModal" class="modal-backdrop">
+    <div class="modal-box">
+      <button id="closeModalBtn" class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      <div class="modal-header">
+        <h3 id="modalTitle">Highlight Preview</h3>
+        <p id="modalDesc">Clip Description</p>
+      </div>
+      <div class="modal-player-sim">
+        <div class="sim-screen">
+          <i class="fa-solid fa-circle-play sim-play-icon"></i>
+          <p>Simulated Live Video Highlight Player</p>
+          <span class="sim-meta">Recorded in 1440p @ 60FPS</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <i class="fa-brands fa-twitch"></i> Watch More on Channel
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo">
+          <i class="fa-solid fa-gamepad"></i> HAMIDOH<span class="accent-text">GAMING</span>
+        </div>
+        <p>The home of high-speed reflexes, vibrant community, and relentless dedication to the grind.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="#about">About</a>
+        <a href="#battlestation">Battlestation</a>
+        <a href="#vault">Game Vault</a>
+        <a href="#arcade">Neon Arcade</a>
+      </div>
+      <div class="footer-links">
+        <h4>Developer &amp; GitHub</h4>
+        <a href="https://github.com/hamidohgaming-dotcom" target="_blank" rel="noopener noreferrer">hamidohgaming-dotcom</a>
+        <a href="https://github.com/hamidohgaming-dotcom/hamidohgaming-dotcom" target="_blank" rel="noopener noreferrer">Profile Repository</a>
+        <a href="https://github.com/hamidohgaming-dotcom.github.io" target="_blank" rel="noopener noreferrer">GitHub Pages Hub</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Hamidoh Gaming. Built for GitHub: <code>hamidohgaming-dotcom</code>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="minigame.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
